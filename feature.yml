@@ -1,0 +1,33 @@
+name: Request a feature
+description: Suggest something Igloo should do, for the free version or for Igloo Pro.
+labels: ["feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This tracker is public. Describe the need in general terms; please do not paste names from your systems.
+  - type: input
+    id: version
+    attributes:
+      label: Igloo version
+    validations:
+      required: true
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Free or Pro idea?
+      description: Pro is the planned paid version with write actions (publish, apply, tag). If you are not sure, choose Not sure.
+      options: [Free version, Igloo Pro, Not sure]
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you trying to do?
+      description: The problem first, then your idea for how Igloo could help.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do it today?

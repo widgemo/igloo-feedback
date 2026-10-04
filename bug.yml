@@ -1,0 +1,35 @@
+name: Report a bug
+description: Something in Igloo does not work or looks wrong.
+labels: ["bug", "needs-info"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This tracker is public. Please do not paste host names, instance or app names, branch names, people's names or tokens.
+  - type: input
+    id: version
+    attributes:
+      label: Igloo version
+      description: Filled in for you when you start from Igloo. Otherwise see About.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what did you see instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where does it happen?
+      options: [Demo mode, Live mode, Both, Not sure]
+    validations:
+      required: true
+  - type: textarea
+    id: support
+    attributes:
+      label: Support info
+      description: In Igloo choose Help and feedback, then Copy support info, and paste it here (it has no names).
+      render: text
