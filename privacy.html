@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Igloo privacy policy</title><style>
+body{font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;color:#13272b;background:#f6f9fa}
+h1{font-size:1.7rem}h2{font-size:1.15rem;margin-top:1.8rem}.draft{padding:.6rem .9rem;border:1px solid #c9a227;background:#fff8dc;border-radius:8px}
+a{color:#006b6b}footer{margin-top:2.5rem;color:#55696f;font-size:.9rem}
+@media (prefers-color-scheme:dark){body{color:#e4eef0;background:#0f1d21}.draft{background:#3a3210;border-color:#c9a227}a{color:#4fd1c5}footer{color:#9db3b9}}
+</style></head><body>
+<h1>Igloo privacy policy</h1>
+<p class="draft"><strong>Draft.</strong> Written in plain language to match what the software does. Have a lawyer read it before you rely on it. Last updated: 2026-10-04. Applies to Igloo 0.12.x (beta).</p>
+<p>Igloo is a browser extension from Widgemo that shows the version, branch and publish state of ServiceNow scoped apps across your instances. This page says what it does with information.</p>
+
+<h2>The short version</h2>
+<ul>
+<li>Igloo has <strong>no servers of ours</strong>. It sends <strong>nothing</strong> to Widgemo: no analytics, no tracking, no crash reports, no accounts.</li>
+<li>Everything Igloo shows is read by your browser, from the ServiceNow instances and Git hosts <strong>you</strong> choose, and stays in your browser.</li>
+<li>Igloo only <strong>reads</strong> (HTTP GET). The free version never changes anything on your instances or Git hosts.</li>
+</ul>
+
+<h2>What Igloo stores, and where</h2>
+<p>In your browser's extension storage on your own computer (<code>chrome.storage.local</code>), never sent to us:</p>
+<ul>
+<li>your settings and your setup (instance labels and host names, tiers, app filters);</li>
+<li>the last Live data it read (app names, versions, branches, change names, people's user ids as ServiceNow reports them), so it can show it quickly next time;</li>
+<li>small app logos read from your instances;</li>
+<li>an activity log of what Igloo did (details redacted of secrets);</li>
+<li>Git host access tokens or API tokens you type in (optional, read-only is enough). They are kept per host, are never shown again, and are not included in exports, the activity log or support info. Extension storage is not encrypted on disk, so use read-only tokens.</li>
+</ul>
+
+<h2>What Igloo connects to</h2>
+<ul>
+<li><strong>Your ServiceNow instances</strong>, only after you allow each site in the browser's permission prompt. Igloo uses your existing browser sign-in; it does not store your ServiceNow password.</li>
+<li><strong>Your Git hosts</strong> (for example github.com, api.github.com, bitbucket.org, or hosts you add), with the token you provide, if any.</li>
+<li>Nothing else. Igloo does not load scripts, fonts or images from the internet.</li>
+</ul>
+
+<h2>Help and feedback</h2>
+<p>"Report a bug" and "Request a feature" open pages in a new browser tab on GitHub (the public feedback tracker). "Contact support" opens your email program. "Copy support info" copies a short text (version, browser, counts, and error messages with names removed) to your clipboard for you to paste; nothing is sent by Igloo. Anything you post in the public tracker is public: do not include host names, app names or tokens.</p>
+
+<h2>Removing your data</h2>
+<p>Settings &rarr; Data &rarr; "Clear saved Live data" deletes the saved snapshot and logos. Removing a token or your setup is done in Settings. Removing the extension deletes everything it stored.</p>
+
+<h2>Children</h2>
+<p>Igloo is a tool for software teams and is not directed at children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published at this address with a new date, and a change that affects what data leaves your browser will be announced in the extension.</p>
+
+<h2>Contact</h2>
+<p>Widgemo &middot; <a href="mailto:support@widgemo.com">support@widgemo.com</a></p>
+<footer>Igloo is not affiliated with, endorsed or sponsored by ServiceNow, Inc., GitHub, Inc., Atlassian Pty Ltd or Google LLC.</footer>
+</body></html>
