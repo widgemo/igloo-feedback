@@ -31,5 +31,5 @@ body:
     id: support
     attributes:
       label: Support info
-      description: In Igloo choose Help and feedback, then Copy support info, and paste it here (it has no names).
+      description: Filled in for you when you start from Igloo (you can see it first and untick it there). Otherwise choose Help and feedback in Igloo, then Copy support info, and paste it here. It has no names.
       render: text
